@@ -16,6 +16,5 @@ end
 
 def find_the_cheese(item)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  cheese = item.any?(cheese_types)
-  puts cheese
+  item.find { |cheese| cheese_types.include(cheese)}
 end
