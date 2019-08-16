@@ -7,7 +7,7 @@ end
 def summon_captain_planet(planeteer_calls)
   planeteer_calls_corrected = []
   planeteer_calls.map do |name|
-    name.capitalize << planeteer_calls_corrected
+    name.capitalize + "!" << planeteer_calls_corrected
   end
   planeteer_calls_corrected
 end
