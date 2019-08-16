@@ -16,5 +16,6 @@ end
 
 def find_the_cheese(item)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  return item.any?(cheese_types)
+  cheese = item.any?(cheese_types)
+  puts cheese
 end
